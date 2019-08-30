@@ -20,10 +20,9 @@ html {
 }
 
 .v-header {
-  height: 100vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: rgba(255, 196, 0, 0.432);
 }
 
 .container {
@@ -34,9 +33,6 @@ html {
   text-align: center;
 }
 
-.container > div {
-  border: solid 1px;
-}
 img {
   height: 150px;
   width: 130px;
@@ -46,7 +42,11 @@ img {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
-  border: solid 1px;
+  min-height: 100px;
+
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
   z-index: 3;
 }
 
@@ -59,7 +59,27 @@ img {
 }
 
 #links {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  font-size: 25px;
   z-index: 3;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 196, 0, 0.753);
+}
+
+#links > a:hover {
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #ffffff;
+  -webkit-fill-color: #ffffff;
+  text-shadow: 1px 0px 20px rgb(201, 201, 5);
+  text-decoration: underline;
+  transition: 0.75s;
 }
 
 .fullscreen-video-wrap {
@@ -98,16 +118,22 @@ img {
   left: 0;
   background: rgb(134, 133, 133);
   z-index: 1;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
-.header-content {
-  z-index: 2;
+#shop {
+  z-index: 5;
+  height: 180px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30vh;
 }
 
 .btn {
   background: rgba(255, 196, 0, 0.548);
-  color: #fff;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
   font-size: 1rem;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -119,5 +145,3 @@ img {
     padding-left: 3rem;
   }
 }
-
-https: ; //www.youtube.com/watch?v=8r9L3HnnbOw
