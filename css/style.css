@@ -118,7 +118,8 @@ a {
   left: 0;
   background: rgb(134, 133, 133);
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.3;
+  box-shadow: inset 0 0 50px 50px #0c0c0cc9;
 }
 
 #shop {

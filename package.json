@@ -1,0 +1,19 @@
+{
+  "name": "omnifood-contents",
+  "version": "1.0.0",
+  "description": "Kochi-stockholm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diyarfaraj/kochi-stockholm.git"
+  },
+  "author": "Diyar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diyarfaraj/kochi-stockholm/issues"
+  },
+  "homepage": "https://github.com/diyarfaraj/kochi-stockholm#readme"
+}
