@@ -1,3 +1,7 @@
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------Basic Setup ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,141 +12,98 @@ html {
   color: #555;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 20px;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
 
+/*--------------------------------------------- ----------------------------------*/
+/*----------------------------------REUSABLE COMPONENT ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.v-header {
-  display: flex;
-  align-items: center;
-  color: rgba(255, 196, 0, 0.432);
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------HEADER ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/kochi-chair.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.container {
-  max-width: 960px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: auto;
-  text-align: center;
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-img {
-  height: 150px;
-  width: 130px;
+/*--------------------------------------------- ----------------------------------*/
+/*----------------------------------HEADING ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 200%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-bottom: 20px;
 }
 
-.nav {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 10px;
-  min-height: 100px;
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------BUTTONS----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
 
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
-  z-index: 3;
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  background-color: #c49404dc;
+  color: black;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #6d5203dc;
 }
 
 .logo {
-  background: rgba(255, 196, 0, 0.432);
-  width: 150px;
-  z-index: 3;
-  top: 0;
-  left: 0;
-}
-
-#links {
-  display: grid;
-  justify-content: end;
-  align-content: center;
-  grid-auto-flow: column;
-  grid-gap: 20px;
-  font-size: 25px;
-  z-index: 3;
-}
-
-a {
-  text-decoration: none;
-  color: rgba(255, 196, 0, 0.753);
-}
-
-#links > a:hover {
-  -webkit-stroke-width: 5.3px;
-  -webkit-stroke-color: #ffffff;
-  -webkit-fill-color: #ffffff;
-  text-shadow: 1px 0px 20px rgb(201, 201, 5);
-  text-decoration: underline;
-  transition: 0.75s;
-}
-
-.fullscreen-video-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  filter: grayscale(100%);
-}
-
-.fullscreen-video-wrap video {
-  min-width: 100%;
-  min-height: 100%;
-}
-
-#videobg {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  height: 200px;
   width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
-  overflow: hidden;
+  margin-top: 10px;
 }
 
-.header-overlay {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgb(134, 133, 133);
-  z-index: 1;
-  opacity: 0.3;
-  box-shadow: inset 0 0 50px 50px #0c0c0cc9;
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+  color: #c49404dc;
 }
 
-#shop {
-  z-index: 5;
-  height: 180px;
-  width: 300px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30vh;
+.main-nav li {
+  display: inline;
+  margin-left: 40px;
 }
 
-.btn {
-  background: rgba(255, 196, 0, 0.548);
-  color: rgb(12, 12, 12);
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 1rem 2rem;
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0px;
   text-decoration: none;
+  color: #c49404dc;
+  text-transform: uppercase;
+  transition: border-bottom 0.5s;
 }
 
-@media (max-width: 960px) {
-  .container {
-    padding-right: 3rem;
-    padding-left: 3rem;
-  }
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #c49404dc;
 }

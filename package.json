@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Kochi-stockholm",
   "main": "index.js",
+  "homepage": "https://diyarfaraj.github.io/kochi-stockholm",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,7 @@
   "bugs": {
     "url": "https://github.com/diyarfaraj/kochi-stockholm/issues"
   },
-  "homepage": "https://github.com/diyarfaraj/kochi-stockholm#readme"
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
