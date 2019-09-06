@@ -165,6 +165,16 @@ h3 {
   border-bottom: 2px solid #c49404dc;
 }
 
+.section-features .long-copy {
+  margin-bottom: 40px;
+}
+
+.section-features {
+  padding-bottom: 0;
+}
+
+
+
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------MEALS----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
@@ -182,12 +192,23 @@ float: left;
 width: 25%;
 }
 
-.meal-photo {
+.meals-photo {
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .meals-photo img {
+  opacity: 0.5;
   width: 100%;
   height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meals-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5sS;
 }
