@@ -16,6 +16,18 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /*--------------------------------------------- ----------------------------------*/
 /*----------------------------------REUSABLE COMPONENT ----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
@@ -36,10 +48,10 @@ section {
 /*-----------------------------------HEADER ----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/img/kochi-chair.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/kochi-chair.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
+
   height: 100vh;
 }
 
@@ -173,23 +185,19 @@ h3 {
   padding-bottom: 0;
 }
 
-
-
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------MEALS----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 
-
 .meals-showcase {
   list-style: none;
   width: 100%;
-
 }
 
 .meals-showcase li {
-display: block;
-float: left;
-width: 25%;
+  display: block;
+  float: left;
+  width: 25%;
 }
 
 .meals-photo {
@@ -210,5 +218,56 @@ width: 25%;
 .meals-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
-  transition: transform 0.5s, opacity 0.5sS;
+  transition: transform 0.5s, opacity 0.5ss;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------SECTION How it works-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+.section-steps {
+  background-color: rgba(196, 196, 196, 0.469);
+  margin-top: 0;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+.works-step div {
+  color: #c49404dc;
+  border: 2px solid #c49404dc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
