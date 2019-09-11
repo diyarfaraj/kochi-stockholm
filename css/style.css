@@ -151,10 +151,11 @@ a:hover,
 a:active {
   color: #555;
   border-bottom: solid 1px transparent;
-
-
 }
 
+#logo-link:link {
+  border: 0;
+}
 
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------BUTTONS----------------------------------*/
@@ -360,4 +361,30 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*-----------------------------------Testimonials-------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+
+.section-plans {
+  background-color: rgba(196, 196, 196, 0.469);
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid rgb(240, 237, 237);
+}
+
+.plan-price {
+  font-size: 200%;
+  margin-bottom: 10px;
 }
