@@ -163,7 +163,7 @@ a:active {
 
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -174,7 +174,7 @@ input[type=submit] {
 }
 
 .btn:hover,
-input[type=submit]:hover{
+input[type="submit"]:hover {
   background-color: #6d5203dc;
   cursor: pointer;
 }
@@ -330,11 +330,11 @@ input[type=submit]:hover{
 /*--------------------------------------------- ----------------------------------*/
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)) , url(/img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
+    url(/img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
-
 }
 
 blockquote {
@@ -342,9 +342,9 @@ blockquote {
   font-style: italic;
   line-height: 145%;
   position: relative;
-  margin-top: 40px;;
+  margin-top: 40px;
 }
-blockquote::before{
+blockquote::before {
   content: "\201C";
   font-size: 300%;
   display: block;
@@ -369,7 +369,6 @@ cite img {
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------Testimonials-------------------------*/
 /*--------------------------------------------- ----------------------------------*/
-
 
 .section-plans {
   background-color: rgba(196, 196, 196, 0.469);
@@ -410,7 +409,7 @@ cite img {
 .plan-box span {
   color: #c49404dc;
   text-transform: capitalize;
-  font-size: 80%S
+  font-size: 80%S;
 }
 
 .plan-box ul {
@@ -418,7 +417,7 @@ cite img {
 }
 
 .plan-box ul li {
-padding: 5px 0;
+  padding: 5px 0;
 }
 
 /*--------------------------------------------- ----------------------------------*/
@@ -430,8 +429,8 @@ padding: 5px 0;
   margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -444,10 +443,81 @@ textarea {
   height: 100px;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin: 10px 5px 10px 0;
 }
 
 *:focus {
   outline: #6d035fdc;
+}
+
+/*--------------------------------------------- ----------------------------------*/
+/*----------------------------------FOOTER ----------------------------------*/
+/*--------------------------------------------- ----------------------------------*/
+
+footer {
+  background-color: rgb(105, 105, 105);
+  padding: 60px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(199, 191, 176);
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(199, 191, 176);
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+  color: #fff;
+}
+
+footer p {
+  color: rgb(199, 191, 176);
+  text-align: center;
+}
+
+.social-ins:hover {
+  color: #e4405f;
+}
+
+.social-face:hover {
+  color: #3b5999;
+}
+.social-tw:hover {
+  color: #55acee;
+}
+.social-linkd:hover {
+  color: #0077b5;
 }
