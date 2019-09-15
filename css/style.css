@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -50,6 +51,14 @@ section {
 /*-----------------------------------HEADER ----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 header {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(/img/kochi-chair.jpg) no-repeat center center fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/img/kochi-chair.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -62,6 +71,7 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -146,6 +156,7 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: solid 1px #c49404dc;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -172,6 +183,7 @@ input[type="submit"] {
   text-decoration: none;
   background-color: #c49404dc;
   color: black;
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -205,6 +217,7 @@ input[type="submit"]:hover {
   text-decoration: none;
   color: #c49404dc;
   text-transform: uppercase;
+  -webkit-transition: border-bottom 0.5s;
   transition: border-bottom 0.5s;
 }
 
@@ -247,14 +260,22 @@ input[type="submit"]:hover {
   opacity: 0.5;
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meals-photo img:hover {
   opacity: 1;
+  -webkit-transform: scale(1.03);
   transform: scale(1.03);
+  -webkit-transition: opacity 0.5ss, -webkit-transform 0.5s;
+  transition: opacity 0.5ss, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5ss;
+  transition: transform 0.5s, opacity 0.5ss, -webkit-transform 0.5s;
 }
 
 /*--------------------------------------------- ----------------------------------*/
@@ -332,6 +353,14 @@ input[type="submit"]:hover {
 /*--------------------------------------------- ----------------------------------*/
 
 .section-testimonials {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.801)),
+      to(rgba(0, 0, 0, 0.678))
+    ),
+    url(/img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
     url(/img/back-customers.jpg);
   background-size: cover;
@@ -381,6 +410,7 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px;
   box-shadow: 0 2px 2px;
 }
 
