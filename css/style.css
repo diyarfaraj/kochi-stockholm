@@ -5,18 +5,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   color: #555;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
 
 .clearfix {
@@ -51,14 +48,6 @@ section {
 /*-----------------------------------HEADER ----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 header {
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
-    ),
-    url(/img/kochi-chair.jpg) no-repeat center center fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/img/kochi-chair.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -71,7 +60,6 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -156,7 +144,6 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: solid 1px #c49404dc;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -176,28 +163,38 @@ a:active {
 
 .btn:link,
 .btn:visited,
-input[type="submit"] {
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
   background-color: #c49404dc;
   color: black;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
 .btn:hover,
-input[type="submit"]:hover {
+input[type=submit]:hover{
   background-color: #6d5203dc;
   cursor: pointer;
 }
 
 .logo {
-  height: 200px;
+  height: 100px;
   width: auto;
   margin-top: 10px;
+  float: left;
 }
+
+.logo-sticky {
+  display: none;
+  height: 10px;
+  width: auto;
+  margin: 5px 0;
+  
+}
+
+/* Main nav*/
 
 .main-nav {
   float: right;
@@ -217,7 +214,6 @@ input[type="submit"]:hover {
   text-decoration: none;
   color: #c49404dc;
   text-transform: uppercase;
-  -webkit-transition: border-bottom 0.5s;
   transition: border-bottom 0.5s;
 }
 
@@ -234,6 +230,34 @@ input[type="submit"]:hover {
   padding-bottom: 0;
 }
 
+/*Sticky nav*/
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: rgba(14, 13, 13, 0.897);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.541)
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 15px 0px;
+  text-decoration: none;
+
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-sticky {
+  display: block;
+}
+
+.main-nav {
+  margin-top: 18px;
+  color: #c49404dc;
+}
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------MEALS----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
@@ -260,22 +284,14 @@ input[type="submit"]:hover {
   opacity: 0.5;
   width: 100%;
   height: auto;
-  -webkit-transform: scale(1.15);
   transform: scale(1.15);
-  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meals-photo img:hover {
   opacity: 1;
-  -webkit-transform: scale(1.03);
   transform: scale(1.03);
-  -webkit-transition: opacity 0.5ss, -webkit-transform 0.5s;
-  transition: opacity 0.5ss, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5ss;
-  transition: transform 0.5s, opacity 0.5ss, -webkit-transform 0.5s;
 }
 
 /*--------------------------------------------- ----------------------------------*/
@@ -353,19 +369,11 @@ input[type="submit"]:hover {
 /*--------------------------------------------- ----------------------------------*/
 
 .section-testimonials {
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.801)),
-      to(rgba(0, 0, 0, 0.678))
-    ),
-    url(/img/back-customers.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
-    url(/img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)) , url(/img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
+
 }
 
 blockquote {
@@ -373,9 +381,9 @@ blockquote {
   font-style: italic;
   line-height: 145%;
   position: relative;
-  margin-top: 40px;
+  margin-top: 40px;;
 }
-blockquote::before {
+blockquote::before{
   content: "\201C";
   font-size: 300%;
   display: block;
@@ -401,6 +409,7 @@ cite img {
 /*-----------------------------------Testimonials-------------------------*/
 /*--------------------------------------------- ----------------------------------*/
 
+
 .section-plans {
   background-color: rgba(196, 196, 196, 0.469);
 }
@@ -410,7 +419,6 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
-  -webkit-box-shadow: 0 2px 2px;
   box-shadow: 0 2px 2px;
 }
 
@@ -441,7 +449,7 @@ cite img {
 .plan-box span {
   color: #c49404dc;
   text-transform: capitalize;
-  font-size: 80%S;
+  font-size: 80%S
 }
 
 .plan-box ul {
@@ -449,7 +457,7 @@ cite img {
 }
 
 .plan-box ul li {
-  padding: 5px 0;
+padding: 5px 0;
 }
 
 /*--------------------------------------------- ----------------------------------*/
@@ -461,8 +469,8 @@ cite img {
   margin: 0 auto;
 }
 
-input[type="text"],
-input[type="email"],
+input[type=text],
+input[type=email],
 select,
 textarea {
   width: 100%;
@@ -475,81 +483,6 @@ textarea {
   height: 100px;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   margin: 10px 5px 10px 0;
-}
-
-*:focus {
-  outline: #6d035fdc;
-}
-
-/*--------------------------------------------- ----------------------------------*/
-/*----------------------------------FOOTER ----------------------------------*/
-/*--------------------------------------------- ----------------------------------*/
-
-footer {
-  background-color: rgb(105, 105, 105);
-  padding: 60px;
-  font-size: 80%;
-}
-
-.footer-nav {
-  list-style: none;
-  float: left;
-}
-
-.social-links {
-  list-style: none;
-  float: right;
-}
-
-.footer-nav li,
-.social-links li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer-nav li:last-child,
-.social-links li:last-child {
-  margin-right: 0;
-}
-
-.footer-nav li a:link,
-.footer-nav li a:visited {
-  text-decoration: none;
-  border: 0;
-  color: rgb(199, 191, 176);
-}
-
-.social-links li a:link,
-.social-links li a:visited {
-  text-decoration: none;
-  border: 0;
-  color: rgb(199, 191, 176);
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active,
-.social-links li a:hover,
-.social-links li a:active {
-  color: #fff;
-}
-
-footer p {
-  color: rgb(199, 191, 176);
-  text-align: center;
-}
-
-.social-ins:hover {
-  color: #e4405f;
-}
-
-.social-face:hover {
-  color: #3b5999;
-}
-.social-tw:hover {
-  color: #55acee;
-}
-.social-linkd:hover {
-  color: #0077b5;
 }
