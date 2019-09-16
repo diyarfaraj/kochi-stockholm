@@ -232,7 +232,7 @@ input[type=submit]:hover{
 
 /*Sticky nav*/
 
-.sticky-nav {
+.sticky {
   position: fixed;
   top: 0;
   left:0;
