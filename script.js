@@ -2,10 +2,11 @@ const nav = document.querySelector('.whole-nav');
 const topOfNav = nav.offsetTop;
 
 function fixNav() {
-    if(window.scrollY >= 599){
+    console.log('hellooo');
+    if(window.scrollY >= 615){
         nav.classList.add('whole-nav');
     } else {
-        nav.classList.remove('sticky');
+        nav.classList.remove('whole-nav');
     }
 }
 
