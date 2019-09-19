@@ -11,3 +11,8 @@ function fixNav() {
 }
 
 window.addEventListener('scroll', fixNav);
+
+$(document).ready(function() {
+
+    console.log("JQUERY");
+})

@@ -14,6 +14,7 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -189,24 +190,30 @@ input[type=submit]:hover{
   display: none;
   height: 50px;
   width: auto;
-  margin-top: 10px;
+  margin-top: 5px;
   float: left;
 }
 
 
 /* Main nav*/
+#nav {
+  transition: all 1s;
+}
 
 .main-nav {
   float: right;
   list-style: none;
   margin-top: 20px;
   color: #c49404dc;
+  transition: all 0.5s;
   
 }
 
 .main-nav li {
   display: inline;
   margin-left: 40px;
+  transition: all 0.5s;
+
 
   
 }
@@ -244,7 +251,6 @@ input[type=submit]:hover{
   width: 100%;
   
   background: linear-gradient(rgb(15, 15, 11), rgba(17, 12, 12, 0.644));
-  /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.541); */
   z-index: 99;
   transition: all 0.8s;
 }
