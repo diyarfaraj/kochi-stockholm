@@ -15,27 +15,38 @@ window.addEventListener('scroll', fixNav);
 
 $(document).ready(function() {
 
-    // animate on scroll 
+    // animate on scroll Section features
      $('.js--wp-1').waypoint(function(direction) {
          console.log('helliooo')
         $('.js--wp-1').addClass('animated fadeInUp');
     }, {
         offset: '50%'
     })
+
+    // animate on scroll app section
+     $('.js--wp-2').waypoint(function(direction) {
+         console.log('helliooo')
+        $('.js--wp-2').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    })
+
+    // animate on scroll 
+     $('.js--wp-3').waypoint(function(direction) {
+         console.log('helliooo')
+        $('.js--wp-3').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    })
+    // animate on scroll 
+     $('.js--wp-4').waypoint(function(direction) {
+         console.log('helliooo')
+        $('.js--wp-4').addClass('animated pulse');
+    }, {
+        offset: '50%'
+    })
  
 
-    //menu fade
-   /*  $(window).scroll(function () {
-        if ($(this).scrollDown() > 100) {
-            console.log('10000000')
-            $('.whole-nav').animate({opacity: 0.5}, 1000);   
-            } 
-        if ($(this).scrollTop() > 300) {
-            console.log('30000000')
-
-            $('.whole-nav').animate({opacity: 1}, 1000);
-            }
-     });
-     */
+    
 });
  

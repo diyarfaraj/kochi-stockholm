@@ -195,7 +195,7 @@ input[type=submit]:hover{
 }
 
 
-/* Main nav*/
+/*------------------------------- Main nav--------------------------------------------*/
 #nav {
   transition: all 1s;
 }
@@ -242,7 +242,7 @@ input[type=submit]:hover{
   padding-bottom: 0;
 }
 
-/*Sticky nav*/
+/*Sticky nav-------------------------------------------------------------------*/
 
 .whole-nav {
  
@@ -272,6 +272,18 @@ display: none;
 }
 .whole-nav .logo-min {
   display: block;
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin: 30px;
+    cursor: pointer;
+     display: none;
+ }
+
+.hamburger {
+font-size: 200%;
+color: #c49404dc;
 }
 
 
@@ -578,10 +590,19 @@ footer p {
 }
 
 /*----------------------------------ANimate ----------------------------------*/
- .js--wp-1 {
+ .js--wp-1,
+ .js--wp-2,
+ .js--wp-3{
   opacity: 0;
 }
 
-.js--wp-1.animated {
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated
+ {
   opacity: 1;
 } 
+
+/*----------------------------------ANimate ----------------------------------*/
+
+
