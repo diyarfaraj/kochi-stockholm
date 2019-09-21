@@ -164,7 +164,7 @@ a:active {
 
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -175,7 +175,7 @@ input[type=submit] {
 }
 
 .btn:hover,
-input[type=submit]:hover{
+input[type="submit"]:hover {
   background-color: #6d5203dc;
   cursor: pointer;
 }
@@ -194,7 +194,6 @@ input[type=submit]:hover{
   float: left;
 }
 
-
 /*------------------------------- Main nav--------------------------------------------*/
 #nav {
   transition: all 1s;
@@ -206,16 +205,12 @@ input[type=submit]:hover{
   margin-top: 20px;
   color: #c49404dc;
   transition: all 0.5s;
-  
 }
 
 .main-nav li {
   display: inline;
   margin-left: 40px;
   transition: all 0.5s;
-
-
-  
 }
 
 .main-nav li a:link,
@@ -245,12 +240,11 @@ input[type=submit]:hover{
 /*Sticky nav-------------------------------------------------------------------*/
 
 .whole-nav {
- 
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
-  
+
   background: linear-gradient(rgb(15, 15, 11), rgba(17, 12, 12, 0.644));
   z-index: 99;
   transition: all 0.8s;
@@ -265,16 +259,15 @@ input[type=submit]:hover{
   padding: 8px 0px;
   text-decoration: none;
   font-size: 70%;
-
 }
 .whole-nav .logo {
-display: none;
+  display: none;
 }
 .whole-nav .logo-min {
   display: block;
 }
 
-.mobile-nav-icon {
+/* .mobile-nav-icon {
     float: right;
     margin: 30px;
     cursor: pointer;
@@ -285,8 +278,7 @@ display: none;
 font-size: 200%;
 color: #c49404dc;
 }
-
-
+ */
 
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------MEALS----------------------------------*/
@@ -399,11 +391,11 @@ color: #c49404dc;
 /*--------------------------------------------- ----------------------------------*/
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)) , url(/img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
+    url(/img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
-
 }
 
 blockquote {
@@ -411,9 +403,9 @@ blockquote {
   font-style: italic;
   line-height: 145%;
   position: relative;
-  margin-top: 40px;;
+  margin-top: 40px;
 }
-blockquote::before{
+blockquote::before {
   content: "\201C";
   font-size: 300%;
   display: block;
@@ -438,7 +430,6 @@ cite img {
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------Testimonials-------------------------*/
 /*--------------------------------------------- ----------------------------------*/
-
 
 .section-plans {
   background-color: rgba(196, 196, 196, 0.469);
@@ -479,7 +470,7 @@ cite img {
 .plan-box span {
   color: #c49404dc;
   text-transform: capitalize;
-  font-size: 80%S
+  font-size: 80%S;
 }
 
 .plan-box ul {
@@ -487,7 +478,7 @@ cite img {
 }
 
 .plan-box ul li {
-padding: 5px 0;
+  padding: 5px 0;
 }
 
 /*--------------------------------------------- ----------------------------------*/
@@ -499,8 +490,8 @@ padding: 5px 0;
   margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -513,10 +504,9 @@ textarea {
   height: 100px;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   margin: 10px 5px 10px 0;
 }
-
 
 /*--------------------------------------------- ----------------------------------*/
 /*----------------------------------FOOTER ----------------------------------*/
@@ -590,19 +580,16 @@ footer p {
 }
 
 /*----------------------------------ANimate ----------------------------------*/
- .js--wp-1,
- .js--wp-2,
- .js--wp-3{
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
   opacity: 0;
 }
 
 .js--wp-1.animated,
 .js--wp-2.animated,
-.js--wp-3.animated
- {
+.js--wp-3.animated {
   opacity: 1;
-} 
+}
 
 /*----------------------------------ANimate ----------------------------------*/
-
-

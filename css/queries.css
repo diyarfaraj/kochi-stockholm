@@ -86,18 +86,19 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
+  .main-nav {
+    display: none;
+  }
 
   .main-nav {
     float: left;
-  } 
-  .main-nav li{
-
+  }
+  .main-nav li {
     display: block;
-  } 
+  }
   .mobile-nav-icon {
     display: inline-block;
   }
-
 
   h1 {
     font-size: 180%;
@@ -141,8 +142,6 @@
   .contact-form {
     width: 100%;
   }
-
-  
 }
 
 /*SMall screens 0 to 480px */
