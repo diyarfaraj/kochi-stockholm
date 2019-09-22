@@ -267,18 +267,17 @@ input[type="submit"]:hover {
   display: block;
 }
 
-/* .mobile-nav-icon {
-    float: right;
-    margin: 30px;
-    cursor: pointer;
-     display: none;
- }
+.mobile-nav-icon {
+  float: right;
+  margin: 30px;
+  cursor: pointer;
+  display: none;
+}
 
 .hamburger {
-font-size: 200%;
-color: #c49404dc;
+  font-size: 200%;
+  color: #c49404dc;
 }
- */
 
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------MEALS----------------------------------*/

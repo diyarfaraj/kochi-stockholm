@@ -77,15 +77,15 @@
     padding: 0 30px;
   }
 
-  .hero-text-box,
-  .row {
-    padding: 3% 4%;
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
   }
-
   .col {
     width: 100%;
     margin: 0 0 4% 0;
   }
+
   .main-nav {
     display: none;
   }
