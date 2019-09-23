@@ -49,6 +49,7 @@
     width: 17px;
     margin-right: 5px;
   }
+
   .city-feature {
     font-size: 85%;
   }
@@ -81,6 +82,7 @@
   .hero-text-box {
     padding: 0 4%;
   }
+
   .col {
     width: 100%;
     margin: 0 0 4% 0;
@@ -88,23 +90,26 @@
 
   .main-nav {
     display: none;
+    transition: all 0.5s;
   }
 
   .main-nav {
-    float: right;
+    float: left;
     margin-top: 25px;
     margin-left: 25px;
   }
+
   .main-nav li {
     display: block;
   }
 
   .main-nav li a:link,
   .main-nav li a:visited {
-    border:0; 
+    border: 0;
     display: block;
     padding: 10px 0;
   }
+
   .mobile-nav-icon {
     display: inline-block;
   }
@@ -112,9 +117,11 @@
   h1 {
     font-size: 180%;
   }
+
   h2 {
     font-size: 150%;
   }
+
   .long-copy {
     width: 100%;
     margin-left: 0%;
