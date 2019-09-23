@@ -91,10 +91,19 @@
   }
 
   .main-nav {
-    float: left;
+    float: right;
+    margin-top: 25px;
+    margin-left: 25px;
   }
   .main-nav li {
     display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    border:0; 
+    display: block;
+    padding: 10px 0;
   }
   .mobile-nav-icon {
     display: inline-block;

@@ -53,4 +53,12 @@ $(document).ready(function() {
       offset: "50%"
     }
   );
+
+  /* MObile navigation */
+
+  $('.js--nav-icon').click(function() {
+    $('.main-nav').slideToggle(500);
+    //add   <ion-icon name="close"></ion-icon>
+
+  })
 });
