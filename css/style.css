@@ -199,6 +199,7 @@ input[type="submit"]:hover {
 /*------------------------------- Main nav--------------------------------------------*/
 #nav {
   transition: all 1s;
+  z-index: 9999;
 }
 
 .main-nav {
@@ -527,7 +528,7 @@ input[type="checkbox"] {
 
 footer {
   background-color: rgb(105, 105, 105);
-  padding: 60px;
+  padding: 50px;
   font-size: 80%;
 }
 

@@ -1,4 +1,4 @@
-const nav = document.querySelector('.whole-nav');
+const nav = document.querySelector('nav');
 const topOfNav = nav.offsetTop;
 
 function fixNav() {
@@ -59,7 +59,7 @@ $(document).ready(function() {
 	$('.js--nav-icon').click(function() {
 		var nav = $('.js--main-nav');
 		var icon = $('#ham-icon');
-		nav.slideToggle(1000);
+		nav.slideToggle(500);
 		//add   <ion-icon name="close"></ion-icon>
 
 		if (icon.attr('name') === 'menu') {
