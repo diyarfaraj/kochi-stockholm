@@ -278,14 +278,16 @@ input[type="submit"]:hover {
 }
 
 .hamburger {
-  font-size: 200%;
+  font-size: 180%;
   color: #c49404dc;
+  transition: all 1s;
 }
 
 .cross {
-  font-size: 200%;
+  font-size: 180%;
   color: #c49404dc;
   display: none;
+  transition: all 1s;
 }
 
 /*--------------------------------------------- ----------------------------------*/

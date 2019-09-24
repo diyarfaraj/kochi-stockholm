@@ -58,14 +58,17 @@ $(document).ready(function() {
 
 	$('.js--nav-icon').click(function() {
 		var nav = $('.js--main-nav');
-		var icon = $('.js--nav-icon');
-		nav.slideToggle(500);
+		var icon = $('#ham-icon');
+		nav.slideToggle(1000);
 		//add   <ion-icon name="close"></ion-icon>
 
-		if (icon.hasClass('hamburger')) {
-			icon.addClass('cross');
+		if (icon.attr('name') === 'menu') {
+			//if the attribute name of icon is == to menu
+			icon.removeAttr('name'); //remove the name attribute
+			icon.attr('name', 'close'); // add the name attribute again and set it === to close
 		} else {
-			icon.addClass('hamburger');
+			icon.removeAttr('name', 'close'); //remove attribute name === close
+			icon.attr('name', 'menu'); //add attribute name === menu.
 		}
 	});
 });
