@@ -25,7 +25,6 @@ $(document).ready(function() {
 	// animate on scroll app section
 	$('.js--wp-2').waypoint(
 		function(direction) {
-			console.log('helliooo');
 			$('.js--wp-2').addClass('animated fadeInUp');
 		},
 		{
