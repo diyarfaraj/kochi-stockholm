@@ -404,7 +404,7 @@ input[type="submit"]:hover {
 
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
-    url(/img/back-customers.jpg);
+    url(/img/the-gang.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
@@ -609,3 +609,18 @@ footer p {
 }
 
 /*----------------------------------ANimate ----------------------------------*/
+.main-plan {
+
+  /*  display: flex;
+  flex-direction: column; */
+}
+
+.img-plan {
+  display: none;
+  justify-content: flex-end;
+  /*  top: 0;
+  right: 0;
+  float: right; */
+  width: 200px;
+  height: auto;
+}
