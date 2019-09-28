@@ -121,8 +121,7 @@ h3 {
 /*ICON*/
 
 .big-icon {
-  border: red solid;
-  font-size: 100%;
+  font-size: 200%;
   display: block;
   color: #c49404dc;
   margin-bottom: 10px;
@@ -485,7 +484,7 @@ cite img {
 .plan-box span {
   color: #c49404dc;
   text-transform: capitalize;
-  font-size: 80%S;
+  font-size: 80%;
 }
 
 .plan-box ul {
