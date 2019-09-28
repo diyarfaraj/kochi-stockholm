@@ -21,7 +21,7 @@ html {
   zoom: 1;
 }
 
-.clearfix::after {
+.clearfix:after {
   content: ".";
   clear: both;
   display: block;
@@ -238,6 +238,7 @@ input[type="submit"]:hover {
 
 .section-features {
   padding-bottom: 0;
+  margin-bottom: 30px;
 }
 
 /*Sticky nav-------------------------------------------------------------------*/
@@ -294,6 +295,9 @@ input[type="submit"]:hover {
 /*--------------------------------------------- ----------------------------------*/
 /*-----------------------------------MEALS----------------------------------*/
 /*--------------------------------------------- ----------------------------------*/
+.section-meals {
+  padding: 0;
+}
 
 .meals-showcase {
   list-style: none;
@@ -610,7 +614,6 @@ footer p {
 
 /*----------------------------------ANimate ----------------------------------*/
 .main-plan {
-
   /*  display: flex;
   flex-direction: column; */
 }
