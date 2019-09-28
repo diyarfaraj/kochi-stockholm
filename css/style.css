@@ -121,7 +121,8 @@ h3 {
 /*ICON*/
 
 .big-icon {
-  font-size: 300%;
+  border: red solid;
+  font-size: 100%;
   display: block;
   color: #c49404dc;
   margin-bottom: 10px;
