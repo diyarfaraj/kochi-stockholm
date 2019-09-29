@@ -6,7 +6,7 @@
   "homepage": "https://diyarfaraj.github.io/kochi-stockholm",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages /kochi-stockholm"
+    "deploy": "gh-pages index.html"
   },
   "repository": {
     "type": "git",
