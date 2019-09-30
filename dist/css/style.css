@@ -50,7 +50,7 @@ section {
 /*--------------------------------------------- ----------------------------------*/
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/img/kochi-chair.jpg) no-repeat center center fixed;
+    url(../img/kochi-chair.jpg) no-repeat center center fixed;
   background-size: cover;
 
   height: 100vh;
@@ -408,7 +408,7 @@ input[type="submit"]:hover {
 
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.678)),
-    url(/img/the-gang.jpg);
+    url(../img/the-gang.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
